@@ -429,8 +429,6 @@ body {
 
   min-height: 56px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .button:hover,
@@ -498,7 +496,7 @@ body {
 
 @media (min-width: 1158px) {
   .hero {
-    min-width: 1440px;
+    min-width: 1158px;
     min-height: 600px;
     padding-top: 188px;
     background-image: linear-gradient(
@@ -508,6 +506,13 @@ body {
       ),
       url('../images/background/bg-desktop.jpg');
   }
+
+  @media (min-width: 1440px) {
+    .hero {
+      max-width: 1440px;
+    }
+  }
+
   .hero-title {
     font-size: 56px;
     line-height: 107%;
@@ -758,6 +763,7 @@ body {
   color: #2e2f42;
   margin-bottom: 8px;
 }
+
 .portfolio-block-text {
   font-weight: 400;
   font-size: 16px;
@@ -1000,10 +1006,10 @@ body {
   }
   .email-prescription {
     width: 264px;
+    opacity: 1;
   }
 
   .social-text {
     text-align: left;
   }
 }
-
