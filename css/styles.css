@@ -122,7 +122,6 @@ body {
 .page-header {
   padding-top: 16px;
   padding-bottom: 16px;
-  max-width: 320;
   margin: 0 auto;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
@@ -162,18 +161,6 @@ body {
 .menu-burger-btn:focus {
   background-color: #404bbf;
   fill: #fff;
-}
-
-@media screen and (min-width: 768px) {
-  .page-header {
-    max-width: 768;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .page-header {
-    max-width: 1440px;
-  }
 }
 
 /* ------MOBILE MENU------ */
@@ -344,6 +331,7 @@ body {
   .address-list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 12px;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -572,10 +560,6 @@ body {
 }
 
 /* ------SERVIES------ */
-.services-block {
-  max-width: 288px;
-  margin: 0 auto;
-}
 
 .visually-hidden {
   position: absolute;
@@ -598,6 +582,7 @@ body {
 .services-block-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 72px;
 }
 
@@ -620,12 +605,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .services-block {
-    max-width: 736px;
-  }
   .services-block-list {
     display: flex;
     flex-direction: row;
+    align-items: center;
     column-gap: 24px;
     row-gap: 72px;
     flex-wrap: wrap;
@@ -641,14 +624,12 @@ body {
 }
 
 @media screen and (min-width: 1158px) {
-  .services-block {
-    max-width: 1128px;
-  }
   .services-block-list {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    align-self: ;
     flex-wrap: nowrap;
+    gap: 24px;
   }
   .icon-services {
     display: flex;
@@ -679,16 +660,14 @@ body {
 /* ------TEAM------ */
 .team-block {
   background-color: #f4f4fd;
-  max-width: 320px;
-  margin: 0 auto;
+  gap: 24px;
 }
 
 .team-block-list {
   display: flex;
   flex-direction: column;
-  gap: 72px;
-
   align-items: center;
+  gap: 72px;
 }
 
 .team-block-card {
@@ -756,16 +735,14 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .team-block {
-    max-width: 738px;
-  }
   .team-block-list {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     column-gap: 24px;
     row-gap: 64px;
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .team-block-card {
@@ -773,17 +750,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1158px) {
-  .team-block {
-    max-width: 1440px;
-  }
-}
-
 /* ------PORTFOLIO------ */
-.portfolio-block {
-  max-width: 288px;
-  margin: 0 auto;
-}
 
 .block-title {
   font-weight: 700;
@@ -798,8 +765,8 @@ body {
 .portfolio-list {
   display: flex;
   flex-direction: column;
-  gap: 48px;
   align-items: center;
+  gap: 48px;
 }
 
 .portfolio-item:hover {
@@ -856,16 +823,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio-block {
-    max-width: 736px;
-  }
   .portfolio-list {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-    flex-wrap: wrap;
-    justify-content: center;
   }
   .portfolio-item {
     width: calc((100% - 1 * 24px) / 2);
@@ -873,9 +837,6 @@ body {
 }
 
 @media screen and (min-width: 1158px) {
-  .portfolio-block {
-    max-width: 1128px;
-  }
   .portfolio-item {
     width: calc((100% - 2 * 24px) / 3);
   }
@@ -886,8 +847,8 @@ body {
   .footer-container {
     display: flex;
     flex-direction: column;
-    gap: 72px;
     align-items: center;
+    gap: 72px;
   }
 }
 
@@ -896,8 +857,6 @@ body {
   padding-top: 96px;
   padding-bottom: 96px;
   color: #f4f4fd;
-  max-width: 320px;
-  margin: 0 auto;
 }
 
 .logo-part-footer {
@@ -969,8 +928,8 @@ body {
 .footer-prescription {
   display: flex;
   flex-direction: column;
-  gap: 16px;
   align-items: center;
+  gap: 16px;
 }
 
 .email-prescription {
@@ -1021,11 +980,6 @@ body {
   color: #ffffff;
 }
 
-.footer-prescription {
-  display: flex;
-  gap: 24px;
-}
-
 .social-text-prescription {
   display: block;
   max-width: 453px;
@@ -1042,35 +996,31 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .footer {
-    max-width: 768px;
+  .footer-card {
+    max-width: 264px;
+    text-align: left;
   }
-}
-.footer-card {
-  max-width: 264px;
-  text-align: left;
-}
 
-.footer-prescription {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-}
-.email-prescription {
-  width: 264px;
-}
+  .footer-prescription {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .email-prescription {
+    width: 264px;
+  }
 
-.social-text {
-  text-align: left;
+  .social-text {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1158px) {
-  .footer {
-    max-width: 1440px;
-  }
   .footer-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   .footer-card {
