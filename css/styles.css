@@ -41,9 +41,9 @@ body {
   background-color: #ffffff;
 }
 
-.main-block {
+/* .main-block {
   margin: 0 auto;
-}
+} */
 @media screen and (min-width: 320px) {
   body {
     overflow-x: hidden;
@@ -437,10 +437,9 @@ body {
   text-align: center;
   color: #fff;
   max-width: 216px;
-
   margin-right: auto;
-  margin-bottom: 72px;
   margin-left: auto;
+  margin-bottom: 72px;
 }
 
 .button-hero {
@@ -894,7 +893,7 @@ body {
   height: 40px;
 }
 
-.sicial-list-icon-footer {
+.social-list-icon-footer {
   margin-left: 16px;
 }
 
@@ -982,7 +981,6 @@ body {
 
 .social-text-prescription {
   display: block;
-  max-width: 453px;
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-container {
@@ -1004,9 +1002,9 @@ body {
   .footer-prescription {
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 24px;
   }
+
   .email-prescription {
     width: 264px;
   }
@@ -1020,31 +1018,17 @@ body {
   .footer-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
   }
 
   .footer-card {
-    min-width: 264px;
-    text-align: left;
     margin-right: 120px;
   }
   .block-social-footer {
     margin-right: 80px;
   }
 
-  .footer-prescription {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    max-width: 453px;
-  }
   .email-prescription {
-    width: 264px;
     opacity: 1;
-  }
-
-  .social-text {
-    text-align: left;
   }
 }
 
